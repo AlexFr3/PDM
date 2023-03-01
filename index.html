@@ -1,35 +1,52 @@
+<!DOCTYPE html>
 <html>
-  <head>
-    <link rel="stylesheet" type="text/css" href="style.css">
-  </head>
-  <body>
-    <div class="container">
-      <div class="row">
-        <div class="col-md-3" id="riquadro1"></div>
-        <div class="col-md-3" id="riquadro2"></div>
-        <div class="col-md-3" id="riquadro3"></div>
-        <div class="col-md-3" id="riquadro4"></div>
-      </div>
+<head>
+  <title>Casella di testo spostabile</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.min.js"></script>
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.1/themes/smoothness/jquery-ui.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="table.css">
+  <link rel="stylesheet" href="input.css">
+  <script src="script.js"></script>
+</head>
+<body>
+  <div class="modify">
+    <div class="movable">
+      <button  id="btnEdit" value="Modifica" onclick="btnEdit()">
+      <input type="text" value="Prova!" />
     </div>
-    
-    <script src="script.js"></script>
-    <!-- Aggiungi qui la tua tabella HTML -->
-    <table id="tabella-spostabile">
+  </div>
+  
+
+  <div class="movable">
+  <table class="table">
+    <thead>
       <tr>
-        <th>Name</th>
-        <th>Age</th>
-        <th>City</th>
+        <th>Nome</th>
+        <th>Cognome</th>
+        <th>Email</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Mario</td>
+        <td>Rossi</td>
+        <td>mario.rossi@email.com</td>
       </tr>
       <tr>
-        <td>John Doe</td>
-        <td>30</td>
-        <td>New York</td>
+        <td>Giovanni</td>
+        <td>Bianchi</td>
+        <td>giovanni.bianchi@email.com</td>
       </tr>
       <tr>
-        <td>Jane Doe</td>
-        <td>25</td>
-        <td>London</td>
+        <td>Paola</td>
+        <td>Neri</td>
+        <td>paola.neri@email.com</td>
       </tr>
-    </table>
-  </body>
+    </tbody>
+  </table>
+</div>
+
+</body>
 </html>

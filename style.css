@@ -1,36 +1,21 @@
-/* Aggiungi qui il tuo CSS per formattare la tabella */
-table {
-    border-collapse: collapse;
-    width: 100%;
-    position: absolute;
-  }
-  th, td {
-    border: 1px solid black;
-    padding: 8px;
-    text-align: left;
-  }
-  th {
-    background-color: lightgray;
-  }
-  #tabella-spostabile {
-    position: absolute;
-    
-    background-color: white;
-    border: 1px solid black;
-    padding: 10px;
-    left: 50px;
-    top: 50px;
-  }
-  .container {
-    width: 80%;
-    margin: 0 auto;
-  }
-  
-  .col-md-3 {
-    height: 200px;
-    border: 1px solid black;
-    float: left;
-  }
-  
-  
-    
+
+.movable {
+  position: absolute;
+  left: 100px;
+  top: 100px;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid rgb(255, 255, 255);
+  padding: 10px;
+  cursor: move;
+}
+.movable input {
+  cursor: default;
+}
+
+.modify{
+  background-color: aqua;
+  color: white;
+  padding: 5rem;
+  resize: both;
+  overflow: auto;
+}
