@@ -11,42 +11,38 @@
   <script src="script.js"></script>
 </head>
 <body>
-  <div class="modify">
-    <div class="movable">
-      <button  id="btnEdit" value="Modifica" onclick="btnEdit()">
-      <input type="text" value="Prova!" />
-    </div>
-  </div>
-  
-
   <div class="movable">
-  <table class="table">
-    <thead>
-      <tr>
-        <th>Nome</th>
-        <th>Cognome</th>
-        <th>Email</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>Mario</td>
-        <td>Rossi</td>
-        <td>mario.rossi@email.com</td>
-      </tr>
-      <tr>
-        <td>Giovanni</td>
-        <td>Bianchi</td>
-        <td>giovanni.bianchi@email.com</td>
-      </tr>
-      <tr>
-        <td>Paola</td>
-        <td>Neri</td>
-        <td>paola.neri@email.com</td>
-      </tr>
-    </tbody>
-  </table>
-</div>
-
+    <button id="btnEdit" value="Modifica" onclick="btnEdit()">Ridimensiona</button>
+    <input id="Text" type="text" value="Prova!" />
+  </div>
+  <div class="movable">
+    <button id="btnEditTable" value="Modifica" onclick="btnEditTable()">Ridimensiona tabella</button>
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Nome</th>
+          <th>Cognome</th>
+          <th>Email</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Mario</td>
+          <td>Rossi</td>
+          <td>mario.rossi@email.com</td>
+        </tr>
+        <tr>
+          <td>Giovanni</td>
+          <td>Bianchi</td>
+          <td>giovanni.bianchi@email.com</td>
+        </tr>
+        <tr>
+          <td>Paola</td>
+          <td>Neri</td>
+          <td>paola.neri@email.com</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
 </body>
 </html>
