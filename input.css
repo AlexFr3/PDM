@@ -15,12 +15,17 @@ input {
     border-color: #66afe9;
     box-shadow: 0 0 5px #66afe9;
   }
-  #btnEdit{
-    width: 200px;
-    height: 500px;
-    background-color: red;
-    resize: both;
+  .item{
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    background-color: blanchedalmond;
   }
-  #ProvaBtn{
-    resize: both;
+  .resizer{
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    background-color: #333;
+    z-index: 2;
   }

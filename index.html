@@ -1,50 +1,22 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Casella di testo spostabile</title>
-  <script src="https://code.jquery.com/jquery-3.6.4.js"></script>
-  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-  <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.min.js"></script>
+  <title>PDM</title>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="table.css">
   <link rel="stylesheet" href="input.css">
   <script defer src="script.js"></script>
-
 </head>
 <body>
-  <div class="movable">
-    <textarea>Prova</textarea>
-    <button id="btnEdit" value="Modifica" onclick="btnEdit()">Ridimensiona</button>
-    <input id="Text" type="text" value="Prova!" />
+  
+
+  <!-- prova drag and drog -->
+  <div class="item">
+    <div class="resizer"></div>
   </div>
-  <div class="movable">
-    <button id="btnEditTable" value="Modifica" onclick="btnEditTable()">Ridimensiona tabella</button>
-    <table class="table">
-      <thead>
-        <tr>
-          <th>Nome</th>
-          <th>Cognome</th>
-          <th>Email</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Mario</td>
-          <td>Rossi</td>
-          <td>mario.rossi@email.com</td>
-        </tr>
-        <tr>
-          <td>Giovanni</td>
-          <td>Bianchi</td>
-          <td>giovanni.bianchi@email.com</td>
-        </tr>
-        <tr>
-          <td>Paola</td>
-          <td>Neri</td>
-          <td>paola.neri@email.com</td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
+
+  <!-- prova textarea autoresize -->
+  <textarea class="Text" type="text">Prova</textarea>
+  
 </body>
 </html>
